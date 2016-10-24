@@ -1,0 +1,593 @@
+﻿Log file open, 09/22/16 10:43:08
+LogInit:Display: Running engine for game: WarPlanRed
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1637048424) SRandInit(1637048426).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.081491
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.09.22-09.43.09:071][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.22-09.43.09:071][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.09.22-09.43.09:097][  0]LogInit: Computer: RUSSELL
+[2016.09.22-09.43.09:097][  0]LogInit: User: russe
+[2016.09.22-09.43.09:097][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.09.22-09.43.09:097][  0]LogInit: High frequency timer resolution =4.232893 MHz
+[2016.09.22-09.43.09:097][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.09.22-09.43.09:097][  0]LogMemory: Platform Memory Stats for Windows
+[2016.09.22-09.43.09:097][  0]LogMemory: Process Physical Memory: 190.66 MB used, 190.66 MB peak
+[2016.09.22-09.43.09:097][  0]LogMemory: Process Virtual Memory: 195.29 MB used, 195.29 MB peak
+[2016.09.22-09.43.09:097][  0]LogMemory: Physical Memory: 4617.85 MB used, 16283.47 MB total
+[2016.09.22-09.43.09:097][  0]LogMemory: Virtual Memory: 553.53 MB used, 134217728.00 MB total
+[2016.09.22-09.43.09:312][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.09.22-09.43.09:773][  0]LogD3D11RHI: D3D11 adapters:
+[2016.09.22-09.43.10:199][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.09.22-09.43.10:199][  0]LogD3D11RHI:       6102/0/8141 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.09.22-09.43.10:202][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.09.22-09.43.10:202][  0]LogD3D11RHI:       0/0/8141 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.09.22-09.43.10:202][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.09.22-09.43.10:207][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.09.22-09.43.10:208][  0]LogD3D11RHI:     GPU DeviceId: 0x17c8 (for the marketing name, search the web for "GPU Device Id")
+[2016.09.22-09.43.10:208][  0]LogWindows: EnumDisplayDevices:
+[2016.09.22-09.43.10:208][  0]LogWindows:    0. 'NVIDIA GeForce GTX 980 Ti' (P:1 D:1)
+[2016.09.22-09.43.10:208][  0]LogWindows:    1. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.09.22-09.43.10:208][  0]LogWindows:    2. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.09.22-09.43.10:208][  0]LogWindows:    3. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.09.22-09.43.10:208][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.09.22-09.43.10:208][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.09.22-09.43.10:208][  0]LogD3D11RHI:   Driver Version: 372.70 (internal:21.21.13.7270, unified:372.70)
+[2016.09.22-09.43.10:208][  0]LogD3D11RHI:      Driver Date: 8-25-2016
+[2016.09.22-09.43.10:208][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.09.22-09.43.10:597][  0]LogD3D11RHI: Async texture creation enabled
+[2016.09.22-09.43.10:644][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.09.22-09.43.10:644][  0]LogShaderCompilers: Guid format shader working directory is 18 characters bigger than the processId version (../../../../../../WarPlanRed/Intermediate/Shaders/WorkingDirectory/1920/).
+[2016.09.22-09.43.10:644][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/russe/AppData/Local/Temp/UnrealShaderWorkingDir/077457364780B8408178BCBA81E4D7D7/'.
+[2016.09.22-09.43.10:644][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.09.22-09.43.12:364][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.09.22-09.43.12:375][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.09.22-09.43.12:387][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.09.22-09.43.12:398][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.09.22-09.43.12:409][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.09.22-09.43.12:422][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.09.22-09.43.12:432][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.09.22-09.43.12:443][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.09.22-09.43.12:452][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.09.22-09.43.12:461][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.09.22-09.43.12:471][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.09.22-09.43.12:489][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.09.22-09.43.12:489][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.09.22-09.43.12:491][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.09.22-09.43.12:518][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.09.22-09.43.12:527][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.09.22-09.43.12:537][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.09.22-09.43.12:546][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.09.22-09.43.12:558][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.09.22-09.43.12:558][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.09.22-09.43.12:675][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache: Loaded boot cache 0.08s 43MB C:/Users/russe/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/russe/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../WarPlanRed/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../WarPlanRed/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.09.22-09.43.12:752][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.09.22-09.43.12:775][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.09.22-09.43.12:787][  0]LogDerivedDataCache: Using Local data cache path C:/Users/russe/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.09.22-09.43.13:018][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.22-09.43.13:019][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.09.22-09.43.13:190][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.09.22-09.43.13:190][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.09.22-09.43.13:190][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.09.22-09.43.13:506][  0]LogAssetRegistry: FAssetRegistry took 0.0225 seconds to start up
+[2016.09.22-09.43.13:539][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.028273 seconds
+[2016.09.22-09.43.13:545][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.09.22-09.43.13:545][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.09.22-09.43.13:545][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.09.22-09.43.13:555][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.09.22-09.43.13:786][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.22-09.43.13:786][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.22-09.43.15:030][  0]LogSubstanceCoreModule: Substance CPU Engine Loaded, Max Texture Size 2048
+[2016.09.22-09.43.15:041][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.09.22-09.43.15:285][  0]SourceControl: Info Source control is disabled
+[2016.09.22-09.43.15:337][  0]SourceControl: Info Source control is disabled
+[2016.09.22-09.43.15:348][  0]SourceControl: Info Source control is disabled
+[2016.09.22-09.43.15:358][  0]SourceControl: Info Source control is disabled
+[2016.09.22-09.43.15:636][  0]LogEngine: Initializing Engine...
+[2016.09.22-09.43.15:663][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.09.22-09.43.15:664][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.09.22-09.43.15:812][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.09.22-09.43.15:832][  0]LogInit: XAudio2 using 'VX2457-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.09.22-09.43.15:851][  0]LogInit: FAudioDevice initialized.
+[2016.09.22-09.43.15:903][  0]LogDerivedDataCache: Saved boot cache 0.05s 43MB C:/Users/russe/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.09.22-09.43.15:918][  0]LogInit: Texture streaming: Enabled
+[2016.09.22-09.43.15:945][  0]LogInit: Transaction tracking system initialized
+[2016.09.22-09.43.15:971][  0]BlueprintLog: New page: Editor Load
+[2016.09.22-09.43.16:058][  0]LocalizationService: Info Localization service is disabled
+[2016.09.22-09.43.16:136][  0]LogConsoleResponse:Display: 
+[2016.09.22-09.43.16:404][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.09.22-09.43.16:404][  0]LogCook:Display: Mobile HDR setting 1
+[2016.09.22-09.43.16:532][  0]LogFileCache: Scanning file cache for directory 'C:/WarPlanRed/Content/' took 0.02s
+[2016.09.22-09.43.16:532][  0]SourceControl: Info Source control is disabled
+[2016.09.22-09.43.16:532][  0]Cmd: MAP LOAD FILE="../../../../../../WarPlanRed/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.22-09.43.16:536][  0]LightingResults: New page: Lighting Build
+[2016.09.22-09.43.16:539][  0]MapCheck: New page: Map Check
+[2016.09.22-09.43.16:539][  0]LightingResults: New page: Lighting Build
+[2016.09.22-09.43.16:946][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.09.22-09.43.17:097][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.22-09.43.17:098][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.22-09.43.17:155][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 56.635ms to complete.
+[2016.09.22-09.43.17:155][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.623
+[2016.09.22-09.43.17:369][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.09.22-09.43.17:379][  0]LogCollectionManager: Loaded 0 collections in 0.002143 seconds
+[2016.09.22-09.43.17:419][  0]LogFileCache: Scanning file cache for directory 'C:/WarPlanRed/Saved/Collections/' took 0.01s
+[2016.09.22-09.43.17:419][  0]LogFileCache: Scanning file cache for directory 'C:/WarPlanRed/Content/Developers/russe/Collections/' took 0.01s
+[2016.09.22-09.43.17:419][  0]LogFileCache: Scanning file cache for directory 'C:/WarPlanRed/Content/Collections/' took 0.01s
+[2016.09.22-09.43.17:419][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.09.22-09.43.17:431][  0]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 2063 classes and 377 folders.
+[2016.09.22-09.43.17:436][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.09.22-09.43.17:436][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.09.22-09.43.17:436][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.09.22-09.43.17:442][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.09.22-09.43.17:669][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.09.22-09.43.17:674][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.09.22-09.43.17:700][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.09.22-09.43.17:700][  0]LogLoad: Full Startup: 10.33 seconds (BP compile: 0.06 seconds)
+[2016.09.22-09.43.17:700][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.09.22-09.43.17:700][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.09.22-09.43.17:709][  0]LogOcInput: OculusInput pre-init called
+[2016.09.22-09.43.17:728][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.09.22-09.43.17:926][  0]LogRenderer: Reallocating scene render targets to support 1200x912 (Frame:2).
+[2016.09.22-09.43.18:037][  1]LogAssetRegistry: Asset discovery search completed in 4.5534 seconds
+[2016.09.22-09.43.18:037][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.09.22-09.43.18:037][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2016.09.22-09.43.34:953][998]LogBlueprint:Warning: Compiler Warning Node  Unknown  is not referencing a valid level actor
+[2016.09.22-09.43.34:954][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 1 Warning(s) [in 2 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.34:954][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 2 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.34:954][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 3 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.34:956][998]LogBlueprint:Warning: Compiler Warning Node  Unknown  is not referencing a valid level actor
+[2016.09.22-09.43.34:957][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 1 Warning(s) [in 2 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.34:957][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 2 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.34:957][998]LogBlueprint:Warning: Compiler Warning [0027.59] Compile of PersistentLevel.Boston_Test successful, but with 3 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.43.35:444][998]LogAIModule: Creating AISystem for world Boston_Test
+[2016.09.22-09.43.35:489][998]Cmd: MAP LOAD FILE="../../../../../../WarPlanRed/Content/WarPlanRed/Maps/Boston_Test.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.22-09.43.35:489][998]LightingResults: New page: Lighting Build
+[2016.09.22-09.43.35:490][998]LoadErrors: New page: Loading map: Boston_Test.umap
+[2016.09.22-09.43.35:490][998]MapCheck: New page: Map Check
+[2016.09.22-09.43.35:490][998]LightingResults: New page: Lighting Build
+[2016.09.22-09.43.36:045][998]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.22-09.43.36:094][998]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.22-09.43.36:163][998]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 69.154ms to complete.
+[2016.09.22-09.43.36:163][998]LogFileHelpers: Loading map 'Boston_Test' took 0.676
+[2016.09.22-09.43.36:177][999]Cmd: UpdateLandscapeEditorData -warnings
+[2016.09.22-09.43.36:180][999]Cmd: UpdateLandscapeEditorData
+[2016.09.22-09.43.38:509][260]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel' has LevelScriptBlueprint '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test' with GeneratedClass '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test_C' with ClassGeneratedBy '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test'
+[2016.09.22-09.43.38:509][260]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.22-09.43.38:509][260]PIE: New page: PIE session: Boston_Test (22 Sep 2016 10:43:38)
+[2016.09.22-09.43.38:543][260]LogPlayLevel: Creating play world package: /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test
+[2016.09.22-09.43.38:626][260]LogPlayLevel: PIE: StaticDuplicateObject took: (0.083284s)
+[2016.09.22-09.43.38:627][260]LogAIModule: Creating AISystem for world Boston_Test
+[2016.09.22-09.43.38:627][260]LogPlayLevel: PIE: World Init took: (0.001318s)
+[2016.09.22-09.43.38:627][260]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/WarPlanRed/Maps/Boston_Test.Boston_Test to /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test.Boston_Test (0.084916s)
+[2016.09.22-09.43.38:887][260]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2016.09.22-09.43.38:887][260]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Jump' for  InputAction Jump 
+[2016.09.22-09.43.38:887][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp 
+[2016.09.22-09.43.38:887][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn 
+[2016.09.22-09.43.38:887][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'MoveRight' for  InputAxis MoveRight 
+[2016.09.22-09.43.38:890][260]LogBlueprint:Warning: Compiler Warning [0031.52] Compile of Ue4ASP_Character successful, but with 5 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.38:891][260]LogBlueprint:Warning: Compiler Warning [0031.52] Compile of Ue4ASP_Character successful, but with 6 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.38:891][260]LogBlueprint:Warning: Compiler Warning [0031.52] Compile of Ue4ASP_Character successful, but with 7 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.38:926][260]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2016.09.22-09.43.38:926][260]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Jump' for  InputAction Jump 
+[2016.09.22-09.43.38:926][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp 
+[2016.09.22-09.43.38:926][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn 
+[2016.09.22-09.43.38:927][260]LogBlueprint:Warning: Compiler Warning Input Axis Event references unknown Axis 'MoveRight' for  InputAxis MoveRight 
+[2016.09.22-09.43.38:930][260]LogBlueprint:Warning: Compiler Warning [0031.56] Compile of Ue4ASP_Character successful, but with 5 Warning(s) [in 8 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.38:930][260]LogBlueprint:Warning: Compiler Warning [0031.56] Compile of Ue4ASP_Character successful, but with 6 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.38:930][260]LogBlueprint:Warning: Compiler Warning [0031.56] Compile of Ue4ASP_Character successful, but with 7 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2016.09.22-09.43.39:742][260]LogWorld: Game class is 'ShooterGameMode_C'
+[2016.09.22-09.43.39:871][260]LogWorld: Bringing World /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test.Boston_Test up for play (max tick rate 0) at 2016.09.22-10.43.39
+[2016.09.22-09.43.39:874][260]LogWorld: Bringing up level for play took: 0.129556
+[2016.09.22-09.43.39:874][260]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.09.22-09.43.39:877][260]LogInit: WinSock: I am Russell (172.18.8.40:0)
+[2016.09.22-09.43.39:877][260]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.09.22-09.43.39:877][260]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2016.09.22-09.43.39:877][260]PIE: Info Play in editor start time for /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test 1.812
+[2016.09.22-09.43.39:879][260]PIE: New page: PIE session: Boston_Test (22 Sep 2016 10:43:39)
+[2016.09.22-09.43.39:898][260]LogInit: XAudio2 using 'VX2457-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.09.22-09.43.39:904][260]LogInit: FAudioDevice initialized.
+[2016.09.22-09.43.39:985][260]LogNet: Browse: 127.0.0.1//Game/StarterContent/Maps/Minimal_Default
+[2016.09.22-09.43.39:985][260]LogInit: WinSock: Socket queue 32768 / 32768
+[2016.09.22-09.43.39:986][260]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.09.22-09.43.39:986][260]LogNet: Game client on port 7777, rate 10000
+[2016.09.22-09.43.39:986][260]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 3039270, ProjectName: warplanred, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2910764112
+[2016.09.22-09.43.39:986][260]PIE: Info Play in editor start time for /Game/StarterContent/Maps/Minimal_Default 1.92
+[2016.09.22-09.43.39:990][260]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel' has LevelScriptBlueprint '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test' with GeneratedClass '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test_C' with ClassGeneratedBy '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test'
+[2016.09.22-09.43.39:991][260]LogNet: NotifyAcceptingConnection: Server Boston_Test accept
+[2016.09.22-09.43.39:991][260]LogHandshake: SendConnectChallenge. Timestamp: 0.008334, Cookie: 047126096244192086141068170058250082189221205011231080075245
+[2016.09.22-09.43.39:991][260]LogNet: NotifyAcceptingConnection: Server Boston_Test accept
+[2016.09.22-09.43.39:997][260]LogHandshake: SendChallengeResponse. Timestamp: 0.008334, Cookie: 047126096244192086141068170058250082189221205011231080075245
+[2016.09.22-09.43.40:013][261]LogNet: NotifyAcceptingConnection: Server Boston_Test accept
+[2016.09.22-09.43.40:013][261]LogNet: Server accepting post-challenge connection from: 127.0.0.1:56611
+[2016.09.22-09.43.40:014][261]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2016.09.22-09.43.40:014][261]LogNet: NotifyAcceptedConnection: Name: Boston_Test, TimeStamp: 09/22/16 10:43:40, [UNetConnection] RemoteAddr: 127.0.0.1:56611, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2016.09.22-09.43.40:014][261]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:56611, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2016.09.22-09.43.40:033][262]LogNet: NotifyAcceptingChannel Control 0 server World /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test.Boston_Test: Accepted
+[2016.09.22-09.43.40:033][262]LogNet: Remote platform little endian=1
+[2016.09.22-09.43.40:033][262]LogNet: This platform little endian=1
+[2016.09.22-09.43.40:033][262]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 3039270, ProjectName: warplanred, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2910764112
+[2016.09.22-09.43.40:041][263]LogNet: Login request: /Game/StarterContent/Maps/Minimal_Default userId: Invalid
+[2016.09.22-09.43.40:042][263]LogNet: Welcomed by server (Level: /Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test, Game: /Game/WarPlanRed/ShooterGameMode.ShooterGameMode_C)
+[2016.09.22-09.43.40:042][263]LogLoad: LoadMap: 127.0.0.1//Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test?game=/Game/WarPlanRed/ShooterGameMode.ShooterGameMode_C
+[2016.09.22-09.43.40:088][263]Cmd: MEM
+[2016.09.22-09.43.40:102][263]LogMemory: Platform Memory Stats for Windows
+[2016.09.22-09.43.40:102][263]LogMemory: Process Physical Memory: 1179.75 MB used, 1179.75 MB peak
+[2016.09.22-09.43.40:102][263]LogMemory: Process Virtual Memory: 1832.10 MB used, 1832.11 MB peak
+[2016.09.22-09.43.40:102][263]LogMemory: Physical Memory: 5683.87 MB used, 16283.47 MB total
+[2016.09.22-09.43.40:102][263]LogMemory: Virtual Memory: 2573.06 MB used, 134217728.00 MB total
+[2016.09.22-09.43.40:102][263]LogMemory: 
+[2016.09.22-09.43.40:102][263]Allocator Stats for TBB: (not implemented)
+[2016.09.22-09.43.40:181][263]LogWorld: PIE: Copying PIE streaming level from /Game/WarPlanRed/Maps/Boston_Test.Boston_Test to /Game/WarPlanRed/Maps/UEDPIE_2_Boston_Test.Boston_Test. OwningWorld: None
+[2016.09.22-09.43.40:182][263]LogAIModule: Creating AISystem for world Boston_Test
+[2016.09.22-09.43.40:303][263]LogWorld: Bringing World /Game/WarPlanRed/Maps/UEDPIE_2_Boston_Test.Boston_Test up for play (max tick rate 0) at 2016.09.22-10.43.40
+[2016.09.22-09.43.40:306][263]LogWorld: Bringing up level for play took: 0.122067
+[2016.09.22-09.43.40:307][263]LogLoad: Took 0.264815 seconds to LoadMap(/Game/WarPlanRed/Maps/UEDPIE_1_Boston_Test)
+[2016.09.22-09.43.40:326][264]LogNet: Client netspeed is 10000
+[2016.09.22-09.43.40:326][264]LogNet: Join request: /Game/StarterContent/Maps/Minimal_Default?SplitscreenCount=1
+[2016.09.22-09.43.40:332][264]LogNet: Join succeeded: 256
+[2016.09.22-09.43.40:332][264]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.371401 > MaxSimulationTimeStep (0.050) for 'WehrmachtTestCharacter_C_0', movement 'Falling'
+[2016.09.22-09.45.32:256][551]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-148.605 Y=75.986 Z=0.000 Location: X=3015.681 Y=671.317 Z=169.328 Normal: X=0.261 Y=-0.077 Z=0.962 PenetrationDepth:29.861 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part02
+[2016.09.22-09.45.32:275][552]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-123.569 Y=100.868 Z=0.000 Location: X=3015.681 Y=671.317 Z=169.328 Normal: X=-0.988 Y=-0.155 Z=0.000 PenetrationDepth:3.847 Actor:Wall_400x400_DM15 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.32:310][554]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=24.820 Y=48.584 Z=0.000 Location: X=3008.163 Y=692.515 Z=162.913 Normal: X=0.777 Y=-0.629 Z=-0.000 PenetrationDepth:0.820 Actor:Wall_400x400_DM14 Component:DestructibleComponent0 BoneName:Part02
+[2016.09.22-09.45.36:627][771]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-223.310 Y=25.040 Z=0.000 Location: X=3133.687 Y=1503.524 Z=112.562 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:15.438 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:649][772]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-240.662 Y=46.270 Z=0.000 Location: X=3127.158 Y=1504.655 Z=117.780 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:10.221 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:693][774]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-277.859 Y=77.918 Z=0.000 Location: X=3120.657 Y=1505.608 Z=108.389 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:19.612 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:715][775]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-297.851 Y=89.590 Z=0.000 Location: X=3118.115 Y=1507.188 Z=113.433 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:14.568 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:736][776]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-317.979 Y=100.010 Z=0.000 Location: X=3118.115 Y=1507.188 Z=113.433 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:14.568 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:758][777]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-335.160 Y=48.888 Z=0.000 Location: X=3114.847 Y=1508.026 Z=105.698 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:22.303 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.36:778][778]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-352.866 Y=67.277 Z=0.000 Location: X=3114.847 Y=1508.026 Z=105.698 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:22.303 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_36 BoneName:None
+[2016.09.22-09.45.37:388][807]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-16.492 Y=-13.780 Z=0.000 Location: X=2714.447 Y=840.976 Z=130.150 Normal: X=0.970 Y=0.223 Z=0.098 PenetrationDepth:2.639 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:408][808]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-32.363 Y=-29.859 Z=0.000 Location: X=2714.447 Y=840.976 Z=130.150 Normal: X=0.980 Y=0.092 Z=0.174 PenetrationDepth:5.186 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:431][809]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-14.043 Y=-16.630 Z=0.000 Location: X=2714.447 Y=840.976 Z=130.150 Normal: X=0.971 Y=0.172 Z=0.168 PenetrationDepth:4.093 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:451][810]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-26.445 Y=-34.669 Z=0.000 Location: X=2714.447 Y=840.976 Z=130.150 Normal: X=-0.224 Y=0.975 Z=0.000 PenetrationDepth:2.983 Actor:Wall_400x400_DM14 Component:DestructibleComponent0 BoneName:Part21
+[2016.09.22-09.45.37:510][813]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-10.819 Y=-18.841 Z=0.000 Location: X=2714.447 Y=840.976 Z=130.150 Normal: X=0.462 Y=0.876 Z=0.138 PenetrationDepth:2.482 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.37:516][813]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-6.494 Y=-20.434 Z=0.000 Location: X=2714.461 Y=840.969 Z=130.150 Normal: X=0.951 Y=0.198 Z=0.237 PenetrationDepth:8.935 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:553][815]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-2.173 Y=-24.334 Z=0.000 Location: X=2714.548 Y=840.917 Z=130.150 Normal: X=0.500 Y=0.839 Z=0.216 PenetrationDepth:2.455 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.37:558][815]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-6.197 Y=-45.750 Z=0.000 Location: X=2714.548 Y=840.917 Z=130.150 Normal: X=0.959 Y=0.174 Z=0.223 PenetrationDepth:0.604 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:579][816]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-8.065 Y=-67.450 Z=0.000 Location: X=2714.548 Y=840.917 Z=130.150 Normal: X=0.957 Y=0.204 Z=0.205 PenetrationDepth:2.975 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:595][817]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-6.197 Y=-45.749 Z=0.000 Location: X=2714.548 Y=840.917 Z=130.150 Normal: X=0.526 Y=0.815 Z=0.243 PenetrationDepth:2.495 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.37:601][817]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-8.172 Y=-88.982 Z=0.000 Location: X=2715.102 Y=840.585 Z=130.161 Normal: X=-0.690 Y=0.724 Z=-0.000 PenetrationDepth:1.273 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.37:622][818]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-6.264 Y=-111.302 Z=0.000 Location: X=2715.152 Y=840.932 Z=130.161 Normal: X=0.953 Y=0.221 Z=0.207 PenetrationDepth:3.057 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:638][819]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-8.172 Y=-88.982 Z=0.000 Location: X=2715.259 Y=840.817 Z=130.234 Normal: X=0.542 Y=0.802 Z=0.252 PenetrationDepth:2.106 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.37:644][819]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-3.072 Y=-132.768 Z=0.000 Location: X=2716.410 Y=840.809 Z=130.235 Normal: X=0.957 Y=0.211 Z=0.199 PenetrationDepth:1.815 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:665][820]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=0.994 Y=-155.202 Z=0.000 Location: X=2716.410 Y=840.809 Z=130.235 Normal: X=0.954 Y=0.233 Z=0.190 PenetrationDepth:2.600 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part09
+[2016.09.22-09.45.37:688][821]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=4.338 Y=-178.147 Z=0.000 Location: X=2720.134 Y=839.811 Z=130.679 Normal: X=-0.692 Y=0.722 Z=-0.000 PenetrationDepth:5.529 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.37:710][822]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=7.793 Y=-200.816 Z=0.000 Location: X=2722.746 Y=839.675 Z=130.988 Normal: X=0.693 Y=0.721 Z=0.000 PenetrationDepth:3.556 Actor:Wall_400x400_DM14 Component:DestructibleComponent0 BoneName:Part21
+[2016.09.22-09.45.37:778][825]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=17.036 Y=-269.864 Z=0.000 Location: X=2725.547 Y=840.703 Z=146.289 Normal: X=-0.628 Y=0.713 Z=0.311 PenetrationDepth:1.433 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.37:801][826]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=19.084 Y=-292.852 Z=0.000 Location: X=2727.985 Y=840.716 Z=144.319 Normal: X=-0.634 Y=0.720 Z=0.283 PenetrationDepth:3.617 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:170][842]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-113.575 Y=-57.643 Z=0.000 Location: X=2738.117 Y=840.547 Z=134.542 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:15.988 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:190][843]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-96.083 Y=-88.358 Z=0.000 Location: X=2737.319 Y=840.854 Z=132.917 Normal: X=-0.665 Y=0.747 Z=0.000 PenetrationDepth:11.144 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:253][847]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-0.240 Y=-17.799 Z=0.000 Location: X=2737.343 Y=840.931 Z=132.979 Normal: X=0.388 Y=0.906 Z=0.167 PenetrationDepth:0.154 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.38:254][847]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-0.284 Y=-36.190 Z=0.000 Location: X=2737.403 Y=840.959 Z=132.987 Normal: X=0.388 Y=0.906 Z=0.167 PenetrationDepth:0.104 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part10
+[2016.09.22-09.45.38:334][851]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=33.387 Y=-36.383 Z=0.000 Location: X=2740.316 Y=840.536 Z=133.174 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:17.355 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:370][853]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=75.560 Y=-32.820 Z=0.000 Location: X=2742.000 Y=840.502 Z=133.774 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:16.753 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:408][855]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=113.602 Y=-37.261 Z=0.000 Location: X=2744.270 Y=840.391 Z=150.649 Normal: X=-0.511 Y=0.573 Z=0.641 PenetrationDepth:10.277 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:446][857]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=154.095 Y=-23.377 Z=0.000 Location: X=2747.770 Y=840.439 Z=133.563 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:16.958 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:485][859]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=69.925 Y=-5.092 Z=0.000 Location: X=2751.059 Y=840.405 Z=133.895 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:16.623 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:524][861]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=20.647 Y=6.711 Z=0.000 Location: X=2751.138 Y=840.403 Z=134.011 Normal: X=0.001 Y=-0.004 Z=1.000 PenetrationDepth:16.507 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:564][863]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=19.762 Y=18.347 Z=0.000 Location: X=2751.445 Y=840.402 Z=133.664 Normal: X=-0.665 Y=0.747 Z=0.000 PenetrationDepth:20.880 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:603][865]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=21.302 Y=29.912 Z=0.000 Location: X=2752.083 Y=840.409 Z=132.844 Normal: X=-0.665 Y=0.747 Z=0.000 PenetrationDepth:21.299 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:641][867]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=22.916 Y=40.925 Z=0.000 Location: X=2753.189 Y=840.420 Z=131.456 Normal: X=-0.665 Y=0.747 Z=0.000 PenetrationDepth:22.028 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:755][872]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=22.050 Y=-8.132 Z=0.000 Location: X=2753.968 Y=840.900 Z=130.150 Normal: X=-0.001 Y=-0.012 Z=1.000 PenetrationDepth:20.020 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:778][873]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=23.446 Y=-14.132 Z=0.000 Location: X=2753.967 Y=840.683 Z=150.517 Normal: X=-0.416 Y=0.463 Z=0.783 PenetrationDepth:15.013 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:824][875]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=23.978 Y=-23.453 Z=0.000 Location: X=2753.769 Y=840.200 Z=150.601 Normal: X=-0.408 Y=0.453 Z=0.793 PenetrationDepth:15.156 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:872][877]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=71.649 Y=-36.819 Z=0.000 Location: X=2752.173 Y=840.417 Z=131.876 Normal: X=0.001 Y=-0.001 Z=1.000 PenetrationDepth:18.620 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.38:896][878]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=27.570 Y=-38.053 Z=0.000 Location: X=2751.807 Y=840.592 Z=135.628 Normal: X=-0.560 Y=0.829 Z=0.000 PenetrationDepth:8.122 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.38:920][879]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=54.138 Y=-42.961 Z=0.000 Location: X=2751.111 Y=840.617 Z=138.221 Normal: X=-0.000 Y=-0.002 Z=1.000 PenetrationDepth:12.276 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part19
+[2016.09.22-09.45.39:128][888]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=35.587 Y=-86.674 Z=0.000 Location: X=2749.207 Y=840.609 Z=141.187 Normal: X=-0.517 Y=0.825 Z=0.228 PenetrationDepth:4.524 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.39:196][891]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=8.675 Y=-21.502 Z=0.000 Location: X=2749.191 Y=840.652 Z=141.193 Normal: X=-0.514 Y=0.822 Z=0.247 PenetrationDepth:3.993 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.39:242][893]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=25.907 Y=-65.180 Z=0.000 Location: X=2749.379 Y=840.684 Z=141.301 Normal: X=-0.509 Y=0.828 Z=0.235 PenetrationDepth:3.573 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.39:738][914]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=21.001 Y=91.630 Z=0.000 Location: X=2773.587 Y=813.703 Z=164.957 Normal: X=-0.078 Y=0.087 Z=0.993 PenetrationDepth:6.235 Actor:Wall_400x400_DM7 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.40:017][926]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=34.023 Y=1.918 Z=0.000 Location: X=2774.443 Y=620.323 Z=125.435 Normal: X=-0.407 Y=0.914 Z=-0.000 PenetrationDepth:27.258 Actor:Wall_400x400_DM14 Component:DestructibleComponent0 BoneName:Part15
+[2016.09.22-09.45.40:040][927]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=46.484 Y=-23.062 Z=0.000 Location: X=2775.137 Y=619.003 Z=124.798 Normal: X=-0.405 Y=0.914 Z=-0.000 PenetrationDepth:28.637 Actor:Wall_400x400_DM14 Component:DestructibleComponent0 BoneName:Part15
+[2016.09.22-09.45.42:036][  7]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=479.852 Y=-140.502 Z=0.000 Location: X=3488.098 Y=544.902 Z=95.845 Normal: X=-0.019 Y=1.000 Z=0.000 PenetrationDepth:27.099 Actor:Wall_400x400_DM9 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.42:062][  8]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.030 Y=-139.892 Z=0.000 Location: X=3500.471 Y=541.332 Z=94.328 Normal: X=-0.018 Y=1.000 Z=0.000 PenetrationDepth:31.070 Actor:Wall_400x400_DM9 Component:DestructibleComponent0 BoneName:Part08
+[2016.09.22-09.45.42:087][  9]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.162 Y=-139.436 Z=0.000 Location: X=3513.644 Y=536.680 Z=98.166 Normal: X=0.548 Y=0.837 Z=-0.000 PenetrationDepth:5.032 Actor:Wall_400x400_DM16 Component:DestructibleComponent0 BoneName:Part14
+[2016.09.22-09.45.42:113][ 10]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.262 Y=-139.091 Z=0.000 Location: X=3524.580 Y=533.357 Z=102.429 Normal: X=-0.580 Y=-0.815 Z=0.000 PenetrationDepth:9.275 Actor:Wall_400x400_DM16 Component:DestructibleComponent0 BoneName:Part23
+[2016.09.22-09.45.42:139][ 11]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.338 Y=-138.829 Z=0.000 Location: X=3539.232 Y=527.787 Z=100.436 Normal: X=-0.479 Y=-0.878 Z=0.000 PenetrationDepth:5.167 Actor:Wall_400x400_DM16 Component:DestructibleComponent0 BoneName:Part23
+[2016.09.22-09.45.42:166][ 12]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.395 Y=-138.633 Z=0.000 Location: X=3546.930 Y=524.468 Z=98.302 Normal: X=-0.338 Y=-0.941 Z=0.000 PenetrationDepth:4.013 Actor:Wall_400x400_DM16 Component:DestructibleComponent0 BoneName:Part23
+[2016.09.22-09.45.42:191][ 13]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.437 Y=-138.486 Z=0.000 Location: X=3558.268 Y=516.796 Z=92.135 Normal: X=-0.338 Y=0.941 Z=0.000 PenetrationDepth:2.433 Actor:Wall_400x400_DM16 Component:DestructibleComponent0 BoneName:Part02
+[2016.09.22-09.45.42:217][ 14]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=480.671 Y=-137.667 Z=0.000 Location: X=2579.594 Y=645.613 Z=165.198 Normal: X=-0.558 Y=0.136 Z=0.818 PenetrationDepth:1.879 Actor:Wall_400x400_DM6 Component:DestructibleComponent0 BoneName:Part02
+[2016.09.22-09.45.42:395][ 21]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=495.226 Y=68.804 Z=0.000 Location: X=3196.856 Y=777.487 Z=90.292 Normal: X=0.845 Y=-0.535 Z=0.000 PenetrationDepth:27.929 Actor:Wall_400x400_DM8 Component:DestructibleComponent0 BoneName:Part16
+[2016.09.22-09.45.49:345][444]LogCharacterMovement: WehrmachtTestCharacter_C_0 is stuck and failed to move! Velocity: X=-285.351 Y=410.578 Z=0.000 Location: X=2312.799 Y=536.818 Z=149.285 Normal: X=0.144 Y=-0.213 Z=0.966 PenetrationDepth:42.532 Actor:Wall_400x400_DM13 Component:DestructibleComponent0 BoneName:Part17
+[2016.09.22-09.45.59:661][301]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel' has LevelScriptBlueprint '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test' with GeneratedClass '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test_C' with ClassGeneratedBy '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test'
+[2016.09.22-09.45.59:702][301]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel' has LevelScriptBlueprint '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test' with GeneratedClass '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test_C' with ClassGeneratedBy '/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test'
+[2016.09.22-09.45.59:728][301]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: None, Driver: GameNetDriver None, IsServer: NO, PC: None, Owner: None
+[2016.09.22-09.45.59:728][301]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: None, Driver: GameNetDriver None, IsServer: NO, PC: None, Owner: None, Channels: 1, Time: 2016.09.22-09.45.59
+[2016.09.22-09.45.59:728][301]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: None, Driver: GameNetDriver None, IsServer: NO, PC: None, Owner: None
+[2016.09.22-09.45.59:728][301]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:56611, Name: None, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None
+[2016.09.22-09.45.59:728][301]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:56611, Name: None, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None, Channels: 1, Time: 2016.09.22-09.45.59
+[2016.09.22-09.45.59:728][301]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:56611, Name: None, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None
+[2016.09.22-09.45.59:732][301]LogExit: GameNetDriver None shut down
+[2016.09.22-09.45.59:737][301]LogExit: GameNetDriver None shut down
+[2016.09.22-09.46.17:115][341]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2016.09.22-09.46.37:429][348]Cmd: EDIT COPY
+[2016.09.22-09.46.37:767][388]Cmd: EDIT PASTE
+[2016.09.22-09.47.07:979][485]Cmd: SELECT NONE
+[2016.09.22-09.47.25:751][379]LogEditorActor: Deleted Actor: Brush
+[2016.09.22-09.47.25:823][379]LogEditorActor: Deleted 1 Actors (0.088 secs)
+[2016.09.22-09.47.26:842][497]LogEditorActor: Deleted Actor: Brush
+[2016.09.22-09.47.26:891][497]LogEditorActor: Deleted 1 Actors (0.064 secs)
+[2016.09.22-09.48.28:122][115]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WarPlanRed/Maps/Boston_Test" FILE="../../../../../../WarPlanRed/Content/WarPlanRed/Maps/Boston_Test.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.09.22-09.48.28:190][115]LogBlueprint:Warning: Compiler Warning Node  Unknown  is not referencing a valid level actor
+[2016.09.22-09.48.28:190][115]LogBlueprint:Warning: Compiler Warning [0320.82] Compile of PersistentLevel.Boston_Test successful, but with 1 Warning(s) [in 4 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.28:190][115]LogBlueprint:Warning: Compiler Warning [0320.82] Compile of PersistentLevel.Boston_Test successful, but with 2 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.28:190][115]LogBlueprint:Warning: Compiler Warning [0320.82] Compile of PersistentLevel.Boston_Test successful, but with 3 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.28:240][115]LogBlueprint:Warning: Compiler Warning [0320.87] Compile of PersistentLevel.Boston_Test successful, but with 4 Warning(s) [in 49 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.28:240][115]LogBlueprint:Warning: Compiler Warning [0320.87] Compile of PersistentLevel.Boston_Test successful, but with 5 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.28:240][115]LogBlueprint:Warning: Compiler Warning [0320.87] Compile of PersistentLevel.Boston_Test successful, but with 6 Warning(s) [in 0 ms] (/Game/WarPlanRed/Maps/Boston_Test.Boston_Test:PersistentLevel.Boston_Test)
+[2016.09.22-09.48.29:404][115]LogSavePackage: Save=1220.78ms
+[2016.09.22-09.48.29:404][115]LogSavePackage: Moving '../../../../../../WarPlanRed/Saved/Boston_TestDA555DEF41E11AA798269CAF7DDBB3F4.tmp' to '../../../../../../WarPlanRed/Content/WarPlanRed/Maps/Boston_Test.umap'
+[2016.09.22-09.48.29:412][115]LogSavePackage:Display: Finished SavePackage ../../../../../../WarPlanRed/Content/WarPlanRed/Maps/Boston_Test.umap
+[2016.09.22-09.48.29:470][115]LogFileHelpers: Saving map 'Boston_Test' took 1.433
+[2016.09.22-09.48.29:601][115]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.09.22-09.48.29:805][116]Cmd: QUIT_EDITOR
+[2016.09.22-09.48.30:748][116]LogExit: Preparing to exit.
+[2016.09.22-09.48.31:287][116]LogExit: Editor shut down
+[2016.09.22-09.48.31:287][116]LogExit: Transaction tracking system shut down
+[2016.09.22-09.48.31:462][116]LogObj: Freed 0b from 0 cluster array pools.
+[2016.09.22-09.48.31:462][116]LogExit: Object subsystem successfully closed.
+[2016.09.22-09.48.31:482][116]LogD3D11RHI: Shutdown
+[2016.09.22-09.48.31:482][116]LogD3D11RHI: CleanupD3DDevice
+[2016.09.22-09.48.31:622][116]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.09.22-09.48.31:643][116]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (215)
+[2016.09.22-09.48.31:643][116]LogModuleManager: Shutting down and abandoning module WidgetCarousel (214)
+[2016.09.22-09.48.31:643][116]LogModuleManager: Shutting down and abandoning module AddContentDialog (213)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module GameplayTags (212)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module EditorWidgets (211)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module CollectionManager (210)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module CrashTracker (209)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SceneOutliner (208)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module StatsViewer (207)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module FoliageEdit (206)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module LandscapeEditor (205)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (204)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module ActorPickerMode (203)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module GeometryMode (202)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module TextureAlignMode (201)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module BspMode (200)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module HardwareSurvey (199)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (198)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SequenceRecorder (197)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module AutomationWorker (196)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (195)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module PlacementMode (194)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (193)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module CharacterAI (192)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SmartSnapping (191)
+[2016.09.22-09.48.31:645][116]LogModuleManager: Shutting down and abandoning module SessionServices (190)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module ViewportSnapping (189)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module LogVisualizer (188)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (187)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module IntroTutorials (186)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (185)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (184)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (183)
+[2016.09.22-09.48.31:646][116]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (182)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (181)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (180)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (179)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module MergeActors (178)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module SizeMap (177)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module TreeMap (176)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module ReferenceViewer (175)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module LocalizationService (174)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (173)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module HardwareTargeting (172)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (171)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module UndoHistory (170)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module UserFeedback (169)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module XmlParser (168)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module Blutility (167)
+[2016.09.22-09.48.31:725][116]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (166)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (165)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module InputBindingEditor (164)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (163)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module SettingsEditor (162)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module ProjectLauncher (161)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module SessionFrontend (160)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module ProfilerClient (159)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (158)
+[2016.09.22-09.48.31:726][116]LogModuleManager: Shutting down and abandoning module DeviceManager (157)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module AutomationController (156)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module AutomationWindow (155)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Layers (154)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (153)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module DetailCustomizations (152)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module PackagesDialog (151)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Persona (150)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Kismet (149)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module GraphEditor (148)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module ClassViewer (147)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Toolbox (146)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module ModuleUI (145)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module MovieSceneTools (144)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module OutputLog (143)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module GammaUI (142)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Documentation (141)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (140)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module AnalyticsET (139)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module Analytics (138)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module PortalServices (137)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module PortalRpc (136)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module MessagingRpc (135)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module GameplayDebugger (134)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module AITestSuite (133)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module AIModule (132)
+[2016.09.22-09.48.31:779][116]LogModuleManager: Shutting down and abandoning module ProfilerService (131)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module TaskGraph (130)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module SubstanceEditor (129)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module SlateRemote (128)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module SteamVRController (127)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module SteamVR (126)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (125)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module OculusLibrary (124)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module OculusInput (123)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (122)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module CableComponent (121)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (120)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (119)
+[2016.09.22-09.48.31:788][116]LogModuleManager: Shutting down and abandoning module HTML5Networking (118)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module SuperSearch (117)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (116)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (115)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module PluginBrowser (114)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module EpicSurvey (113)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module DesktopPlatform (112)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (111)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module UObjectPlugin (110)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (109)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (108)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module SourceControl (107)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module GitSourceControl (106)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (105)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (104)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (103)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module MeshPaint (102)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (101)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.09.22-09.48.31:789][116]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.09.22-09.48.31:790][116]LogModuleManager: Shutting down and abandoning module ContentBrowser (97)
+[2016.09.22-09.48.31:791][116]LogModuleManager: Shutting down and abandoning module Paper2DEditor (96)
+[2016.09.22-09.48.31:791][116]LogModuleManager: Shutting down and abandoning module UdpMessaging (95)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module SubstanceCore (94)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.09.22-09.48.31:892][116]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.09.22-09.48.31:893][116]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.09.22-09.48.31:893][116]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.09.22-09.48.31:893][116]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.09.22-09.48.31:895][116]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.09.22-09.48.31:896][116]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.09.22-09.48.32:127][116]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.09.22-09.48.32:127][116]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.09.22-09.48.32:127][116]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.09.22-09.48.32:127][116]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.09.22-09.48.32:177][116]LogDerivedDataCache: Shutdown
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.09.22-09.48.32:177][116]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.09.22-09.48.32:178][116]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.09.22-09.48.35:182][116]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.09.22-09.48.35:185][116]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.09.22-09.48.35:187][116]LogExit: Exiting.
+[2016.09.22-09.48.35:188][116]Log file closed, 09/22/16 10:48:35
